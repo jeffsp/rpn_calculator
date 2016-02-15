@@ -1,0 +1,45 @@
+.\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.TH RPN 1 "MARCH 2007" Linux "User Manuals"
+.SH NAME
+rpn \- Reverse Polish Notation Calculator
+.SH SYNOPSIS
+.B rpn [--help]
+.B [--basic]
+.B [--hp35]
+.B [--super]
+.SH DESCRIPTION
+.B rpn
+is an interactive command line reverse polish notation calculator.
+The RPN calculator commands operate on an internal stack.  Push
+numbers onto the stack by entering them at the calculator prompt.
+Perform numeric operations on the stack also by entering commands at
+the calculator prompt.  After each entry, the calculator will display
+the contents of the stack.
+
+Commands are also included that affect the display precision and
+number base.
+
+Type "help" at the calculator prompt to list all calculator commands.
+.SH OPTIONS
+.IP --help
+Get command line help.
+.IP --basic
+Basic mode.  Contains a very limited set of numeric operators.
+.IP --hp35
+HP35 mode.  Includes operators similar to those found on an HP-35 RPN
+calculator.
+.IP --super
+Super mode.  Includes HP35 operators, plus some extra operators.
+.SH DIAGNOSTICS
+All output goes to stderr except the final top stack value, which is
+printed to stdout upon exit.  This will allow you to get the final
+result of an rpn calculation in a shell command.  For example:
+
+	$ THE_RESULT=`echo "1 2 3 4 5 sum" | rpn`
+ 
+.SH AUTHOR
+Jeff Perry <jeffsp@gmail.com>
+.SH "SEE ALSO"
+.BR bc (1)
