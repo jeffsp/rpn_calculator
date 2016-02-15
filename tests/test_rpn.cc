@@ -167,7 +167,7 @@ void test3 ()
     VERIFY (AboutEqual(s.Pop (), 90.0));
 }
 
-int main (int argc, char *argv[])
+int main ()
 {
     try
     {

@@ -44,14 +44,14 @@ int main (int argc, char *argv[])
             throw runtime_error ("usage: rpn " + cl.Usage () + "\n");
 
         // A Reverse Polish Notation Calculator
-        auto_ptr<BasicCalc> calc;
+        unique_ptr<BasicCalc> calc;
 
         if (basic)
-            calc = auto_ptr<BasicCalc> (new BasicCalc);
+            calc = unique_ptr<BasicCalc> (new BasicCalc);
         else if (hp35)
-            calc = auto_ptr<HP35> (new HP35);
+            calc = unique_ptr<HP35> (new HP35);
         else
-            calc = auto_ptr<SuperCalc> (new SuperCalc);
+            calc = unique_ptr<SuperCalc> (new SuperCalc);
 
         cerr << "RPN calculator, version "
             << calc->Version ()

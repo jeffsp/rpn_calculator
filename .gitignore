@@ -2,6 +2,7 @@ obj/
 rpn
 rpn.1.gz
 rpn.Makefile
+rpn.pro
 tests/test_rpn
 tests/test_rpn.Makefile
 tests/test_rpn.pro
