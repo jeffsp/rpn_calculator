@@ -13,11 +13,11 @@ VERSION=$(MAJOR_VERSION).$(MINOR_VERSION).$(RELEASE)
 
 TARGET=rpn
 
-include ../Makefile.app
+include ../qt_support/Makefile.app
 
-INCLUDEPATH=../horny_toad
-DEPENDPATH=../horny_toad
-EXTRA_SOURCES=../horny_toad/argv.cc
+INCLUDEPATH=../argv
+DEPENDPATH=../argv
+EXTRA_SOURCES=../argv/argv.cpp
 LIBS=
 
 check: all

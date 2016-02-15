@@ -26,7 +26,7 @@ int main (int argc, char *argv[])
         bool super = false;
         string fn;
 
-        horny_toad::CommandLine cl;
+        jsp::CommandLine cl;
         cl.AddSpec ("help",     'h',    help,   "Show help");
         cl.AddSpec ("basic",    'b',    basic,  "Basic mode");
         cl.AddSpec ("hp35",     '3',    hp35,   "HP35 mode");

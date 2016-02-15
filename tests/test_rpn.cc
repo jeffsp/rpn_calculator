@@ -13,7 +13,6 @@
 
 using namespace std;
 using namespace jsp;
-using namespace horny_toad;
 
 void test0 ()
 {

@@ -3,9 +3,9 @@
 
 CCFILES=$(shell ls -1 *.cc)
 TARGETS=$(basename $(CCFILES))
-INCLUDEPATH=.. ../../horny_toad
-DEPENDPATH=.. ../../horny_toad
+INCLUDEPATH=.. ../../argv
+DEPENDPATH=.. ../../argv
 EXTRA_SOURCES=
 LIBS=
 
-include ../../Makefile.tests
+include ../../qt_support/Makefile.tests
